@@ -6,10 +6,6 @@ public class Account {
 		this.balance = balance;
 	}
 	
-	public double getBalance() {
-		return balance;
-	}
-	
 	public boolean Withdraw(double amount) {
 		if(amount <= balance) {
 			balance -= amount;
@@ -22,6 +18,10 @@ public class Account {
 	
 	public double Deposit(double amount) {
 		balance += amount;
+		return balance;
+	}
+	
+	public double getBalance() {
 		return balance;
 	}
 }
